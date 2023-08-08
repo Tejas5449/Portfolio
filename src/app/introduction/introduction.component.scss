@@ -1,0 +1,51 @@
+.introduction {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-top: 3%;
+        height: 32rem;
+        width: 32rem;
+        border-radius: 50%;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .text {
+        width: 100%;
+        text-align: left;
+        padding-left: 3%;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 1;
+
+        .text-theme {
+            background: linear-gradient(to right, #12c2e9, #f64f59, #f64f59);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin: 0px;
+            max-width: 80%;
+
+        }
+
+        h6 {
+            margin-bottom: 0px;
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            margin-top: 1.2rem;
+            margin-bottom: 1.3rem;
+        }
+        a {
+            font-size: 1.5rem;
+            font-weight: 200;
+            color: white;
+        }
+    }
+}
