@@ -1,6 +1,8 @@
 .introduction {
     display: flex;
     align-items: center;
+    background-color: #3F2E3E;
+    color: white;
 
     img {
         margin-top: 3%;
@@ -42,10 +44,11 @@
             margin-top: 1.2rem;
             margin-bottom: 1.3rem;
         }
-        a {
+
+        .link-effect {
             font-size: 1.5rem;
-            font-weight: 200;
+            font-weight: 300;
             color: white;
-        }
+             }
     }
 }
