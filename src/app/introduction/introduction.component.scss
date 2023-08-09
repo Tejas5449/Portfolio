@@ -17,8 +17,8 @@
 
         img {
             margin-top: 3%;
-            height: 30em;
-            width: 30em;
+            width: 90%;
+            height: auto;
             border-radius: 50%;
             box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
 
@@ -29,7 +29,7 @@
     .text {
         width: 100%;
         text-align: left;
-        font-size: 3rem;
+        font-size: 3vw;
         font-weight: 600;
         line-height: 1;
 
@@ -41,7 +41,7 @@
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: 1.3vw;
             font-weight: 300;
             margin: 0px;
             max-width: 80%;
@@ -50,13 +50,13 @@
 
         h6 {
             margin-bottom: 0px;
-            font-size: 1.5rem;
+            font-size: 1.5vw;
         }
 
         h2 {
-            font-size: 3rem;
-            margin-top: 1.2rem;
-            margin-bottom: 1.3rem;
+            font-size: 3vw;
+            margin-top: 1.2vw;
+            margin-bottom: 1.3vw;
             max-width: 60%;
 
         }
@@ -67,10 +67,12 @@
             max-width: 50%;
             margin-left: 0%;
             padding: 2%;
-            p{
-                font-size: 1.8rem;
+
+            p {
+                font-size: 1.8vw;
                 font-weight: 200;
             }
+
             .experience-box {
                 //background-color: #eaf2f8;
                 border-right: 3px solid rgb(148, 142, 142);
@@ -84,7 +86,7 @@
 
 
         .link-effect {
-            font-size: 1.5rem;
+            font-size: 1.5vw;
             font-weight: 300;
             color: white;
         }
