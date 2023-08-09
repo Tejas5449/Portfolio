@@ -1,22 +1,35 @@
 .introduction {
     display: flex;
+    // margin: auto;
+    // margin-left: auto;
+    // margin-right: auto;
+
     align-items: center;
     background-color: #3F2E3E;
     color: white;
+    border-bottom: 1px solid #7A7A7A;
+    padding-bottom: 2%;
 
-    img {
-        margin-top: 3%;
-        height: 32rem;
-        width: 32rem;
-        border-radius: 50%;
-        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+    .image {
+        height: 30%;
+        width: 55%;
+        margin-left: 2%;
+
+        img {
+            margin-top: 3%;
+            height: 30em;
+            width: 30em;
+            border-radius: 50%;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+
+        }
     }
+
 
     .text {
         width: 100%;
         text-align: left;
-        padding-left: 3%;
-        font-size: 40px;
+        font-size: 3rem;
         font-weight: 600;
         line-height: 1;
 
@@ -41,14 +54,39 @@
         }
 
         h2 {
+            font-size: 3rem;
             margin-top: 1.2rem;
             margin-bottom: 1.3rem;
+            max-width: 60%;
+
         }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 50%;
+            margin-left: 0%;
+            padding: 2%;
+            p{
+                font-size: 1.8rem;
+                font-weight: 200;
+            }
+            .experience-box {
+                //background-color: #eaf2f8;
+                border-right: 3px solid rgb(148, 142, 142);
+            }
+
+            .projects-box {
+                //background-color: white;
+                padding-left: 5%;
+            }
+        }
+
 
         .link-effect {
             font-size: 1.5rem;
             font-weight: 300;
             color: white;
-             }
+        }
     }
 }
