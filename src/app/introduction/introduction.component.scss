@@ -29,7 +29,7 @@
     .text {
         width: 100%;
         text-align: left;
-        font-size: 3vw;
+        // font-size: 3em;
         font-weight: 600;
         line-height: 1;
 
@@ -55,7 +55,7 @@
 
         h2 {
             font-size: 3vw;
-            margin-top: 1.2vw;
+            margin-top: 0.6vw;
             margin-bottom: 1.3vw;
             max-width: 60%;
 
@@ -91,4 +91,39 @@
             color: white;
         }
     }
+}
+
+@media (max-width: 768px) {
+
+    // this breakpoint can be adjusted as per your needs
+    .introduction {
+        flex-direction: column;
+
+        .text {
+            margin-top: 2%;
+            margin-left: 6%;
+            p {
+                font-size: 2.5vw;
+            }
+
+            h6 {
+                font-size: 2vw;
+            }
+
+            h2 {
+                font-size: 6vw;
+            }
+            .container{
+                p{
+                    font-size: 2.5vw;
+                }
+            }
+            .link-effect{
+                font-size: 2.5vw;
+            }
+        }
+
+        
+    }
+    
 }
