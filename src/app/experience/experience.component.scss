@@ -1,0 +1,69 @@
+.experience {
+  background-color: #3F2E3E;
+  color: white;
+  padding: 2%;
+  border-bottom: 1px solid #7A7A7A;
+
+  h6 {
+    font-size: 1.8vw;
+    margin-bottom: 1.5vw;
+    font-weight: bold;
+  }
+
+  .entry {
+    margin-bottom: 2vw;
+
+    h4 {
+      font-size: 1.5vw;
+      font-weight: 600;
+      margin-bottom: 0.5vw;
+      background: linear-gradient(to right, #12c2e9, #f64f59, #f64f59);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      font-size: 1.2vw;
+      margin: 0 0 0.5vw 0;
+      font-style: italic;
+      color: #ccc;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1.2vw;
+      list-style-type: disc;
+
+      li {
+        font-size: 1.1vw;
+        font-weight: 300;
+        margin-bottom: 0.5vw;
+        line-height: 1.4;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 4%;
+
+    h6 {
+      font-size: 3.5vw;
+    }
+
+    .entry {
+      h4 {
+        font-size: 3vw;
+      }
+
+      p {
+        font-size: 2.5vw;
+      }
+
+      ul li {
+        font-size: 2.4vw;
+      }
+    }
+  }
+}

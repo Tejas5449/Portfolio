@@ -8,13 +8,19 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BiographyComponent } from './biography/biography.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IntroductionComponent,
     NavbarComponent,
-    BiographyComponent
+    BiographyComponent,
+    EducationComponent,
+    ExperienceComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
