@@ -1,13 +1,42 @@
-<div class="projects">
-  <h6>PERSONAL PROJECTS</h6>
-
-  <div class="entry">
-    <h4>Sharyat Management System</h4>
-    <p>Race registration, scheduling, notifications, and analytics with Angular + Spring Boot.</p>
+<div id="projects" class="projects-section">
+  <div class="projects-header">
+    <h6>PROJECTS</h6>
+    <h2>Featured <span class="text-theme">Work Portfolio</span></h2>
   </div>
 
-  <div class="entry">
-    <h4>Doctor Appointment System</h4>
-    <p>Doctor-patient portal with scheduling, real-time alerts, and admin analytics.</p>
+  <!-- Government Projects -->
+  <div class="project-category">
+    <h3>Government Projects</h3>
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of governmentProjects">
+        <img [src]="project.logo" [alt]="project.name" />
+        <p>{{ project.name }}</p>
+        <span class="tagline">{{ project.tagline }}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Professional Projects -->
+  <div class="project-category">
+    <h3>Professional Projects</h3>
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of professionalProjects">
+        <img [src]="project.logo" [alt]="project.name" />
+        <p>{{ project.name }}</p>
+        <span class="tagline">{{ project.tagline }}</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Personal Projects -->
+  <div class="project-category">
+    <h3>Personal Projects</h3>
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of personalProjects">
+        <img [src]="project.logo" [alt]="project.name" />
+        <p>{{ project.name }}</p>
+        <span class="tagline">{{ project.tagline }}</span>
+      </div>
+    </div>
   </div>
 </div>

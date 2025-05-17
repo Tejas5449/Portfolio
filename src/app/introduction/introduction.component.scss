@@ -4,95 +4,151 @@
   background-color: #3f2e3e;
   color: white;
   border-bottom: 1px solid #7a7a7a;
-  padding-bottom: 2%;
+  padding: 4% 5%;
+  gap: 2vw;
+  animation: fadeInIntro 1.2s ease-in-out;
+
+  @keyframes fadeInIntro {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
 
   .image {
-    height: 30%;
-    width: 55%;
-    margin-left: 2%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
 
     img {
-      margin-top: 3%;
-      width: 90%;
-      height: auto;
+      width: 100%;
+      max-width: 500px;
       border-radius: 50%;
-      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
       transition: transform 0.3s ease;
+      animation: floatImage 3s ease-in-out infinite;
     }
 
     img:hover {
       transform: scale(1.1);
     }
-  }
 
-  @keyframes floatImage {
-    0% {
-      transform: translateY(0px);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0px);
+    @keyframes floatImage {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
     }
   }
 
   .text {
-    width: 100%;
+    flex: 2;
     text-align: left;
     font-weight: 600;
-    line-height: 1;
+    line-height: 1.5;
 
     .text-theme {
-      background: linear-gradient(to right, #12c2e9, #f64f59, #f64f59);
+      background: linear-gradient(to right, #12c2e9, #f64f59);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
-    p {
-      font-size: 1.3vw;
-      font-weight: 300;
-      margin: 0px;
-      max-width: 80%;
-    }
-
     h6 {
-      margin-bottom: 0px;
       font-size: 1.5vw;
+      margin-bottom: 0.5vw;
+      letter-spacing: 1px;
+      opacity: 0.85;
     }
 
     h2 {
       font-size: 3vw;
       margin-top: 0.6vw;
       margin-bottom: 1.3vw;
-      max-width: 60%;
+      max-width: 90%;
+    }
+
+    p {
+      font-size: 1.3vw;
+      font-weight: 300;
+      margin: 0;
+      max-width: 90%;
     }
 
     .container {
       display: flex;
-      justify-content: space-between;
-      max-width: 50%;
-      margin-left: 0%;
-      padding: 2%;
+      justify-content: flex-start;
+      margin-top: 2vw;
+      gap: 4vw;
 
-      p {
-        font-size: 1.8vw;
-        font-weight: 200;
+      .box {
+        padding: 1.5vw 2vw;
+        background-color: #503c4c;
+        border-radius: 1vw;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        text-align: center;
+
+        h3 {
+          font-size: 2.5vw;
+          margin: 0;
+        }
+
+        p {
+          font-size: 1.3vw;
+          font-weight: 300;
+          margin: 0.5vw 0 0;
+        }
+
+        &:hover {
+          transform: translateY(-5px);
+          background-color: #61475a;
+        }
       }
 
       .experience-box {
-        border-right: 3px solid rgb(148, 142, 142);
-      }
-
-      .projects-box {
-        padding-left: 5%;
+        border-right: 2px solid #ccc;
       }
     }
 
     .link-effect {
+      display: inline-block;
+      margin-top: 2vw;
       font-size: 1.5vw;
       font-weight: 300;
-      color: white;
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      transition: color 0.3s ease;
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+        transform-origin: left;
+      }
+
+      &:hover {
+        color: #12c2e9;
+      }
+
+      &:hover:after {
+        transform: scaleX(1);
+      }
     }
   }
 }
@@ -101,30 +157,40 @@
   .introduction {
     flex-direction: column;
 
+    .image {
+      margin-bottom: 5%;
+    }
+
     .text {
       margin-top: 2%;
-      margin-left: 6%;
-
-      p {
-        font-size: 2.7vw;
-      }
 
       h6 {
-        font-size: 2vw;
+        font-size: 3vw;
       }
 
       h2 {
         font-size: 6vw;
       }
 
+      p {
+        font-size: 3vw;
+      }
+
       .container {
-        p {
-          font-size: 2.5vw;
+        flex-direction: column;
+        gap: 2vw;
+
+        .box h3 {
+          font-size: 5vw;
+        }
+
+        .box p {
+          font-size: 3.5vw;
         }
       }
 
       .link-effect {
-        font-size: 2.5vw;
+        font-size: 3vw;
       }
     }
   }

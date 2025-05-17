@@ -1,51 +1,113 @@
-.projects {
-  background-color: #3F2E3E;
+.projects-section {
+  background-color: #3f2e3e;
   color: white;
-  padding: 2%;
-  border-bottom: 1px solid #7A7A7A;
+  padding: 4% 6%;
 
-  h6 {
-    font-size: 1.8vw;
-    margin-bottom: 1.5vw;
-    font-weight: bold;
+  animation: fadeInProjects 1.2s ease-in;
+
+  @keyframes fadeInProjects {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  .entry {
-    margin-bottom: 2vw;
-
-    h4 {
+  .projects-header {
+    h6 {
       font-size: 1.5vw;
-      font-weight: 600;
       margin-bottom: 0.5vw;
-      background: linear-gradient(to right, #12c2e9, #f64f59);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      opacity: 0.85;
     }
 
-    p {
-      font-size: 1.2vw;
-      font-weight: 300;
+    h2 {
+      font-size: 3vw;
+      margin-bottom: 2vw;
+
+      .text-theme {
+        background: linear-gradient(to right, #12c2e9, #f64f59);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .project-category {
+    margin-bottom: 3vw;
+
+    h3 {
+      font-size: 2vw;
+      margin-bottom: 1.5vw;
       color: #e0e0e0;
-      max-width: 90%;
-      line-height: 1.4;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 2.5vw;
+    }
+
+    .project-card {
+      background-color: #503c4c;
+      padding: 1.5vw;
+      border-radius: 1vw;
+      text-align: center;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+
+      img {
+        width: 80px; // Increased size from 50px
+        height: 80px;
+        margin-bottom: 1vw;
+        border-radius: 100%; // Added border radius
+        object-fit: cover; // Ensures logo fits nicely
+        transition: transform 0.3s ease;
+      }
+
+      p {
+        font-size: 1.3vw;
+        font-weight: 500;
+        margin-bottom: 0.5vw;
+      }
+
+      .tagline {
+        font-size: 1vw;
+        opacity: 0.7;
+      }
+
+      &:hover {
+        transform: scale(1.2);
+        background-color: #61475a;
+
+        img {
+          transform: scale(1.2);
+        }
+      }
     }
   }
 }
 
 @media (max-width: 768px) {
-  .projects {
-    padding: 4%;
+  .projects-section {
+    padding: 6%;
 
-    h6 {
-      font-size: 3.5vw;
+    .projects-header h2 {
+      font-size: 6vw;
     }
 
-    .entry {
-      h4 {
+    .project-category h3 {
+      font-size: 4vw;
+    }
+
+    .project-card {
+      p {
         font-size: 3vw;
       }
 
-      p {
+      .tagline {
         font-size: 2.5vw;
       }
     }
