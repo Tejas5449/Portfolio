@@ -1,34 +1,24 @@
-<div class="experience">
-  <div class="experience-wrapper">
-    <div class="experience-image">
-      <img src="assets/Experiance.png" alt="Experience Icon">
-    </div>
+<div class="experience-section">
+  <div class="experience-header">
+    <h6>EXPERIENCE</h6>
+    <h2>My <span class="text-theme">Work Journey</span></h2>
+  </div>
 
-    <div class="experience-content">
-      <h6>EXPERIENCE</h6>
+  <div class="experience-grid">
+    <div class="experience-card" *ngFor="let exp of experienceList">
+      <img [src]="exp.logo" [alt]="exp.company" />
+      <div class="exp-content">
+        <h4>{{ exp.role }}</h4>
+        <p class="company">{{ exp.company }} ({{ exp.duration }})</p>
+        <!-- <p class="duration">{{ exp.duration }}</p> -->
 
-      <div class="entry">
-        <h4>Software Developer – Probity Software Pvt Ltd</h4>
-        <p>Sept 2023 – Present</p>
-        <ul>
-          <li><strong>MHADA CFC Project:</strong> Developed a token-based citizen facility center system using Angular
-            16, Spring Boot &amp; PostgreSQL.</li>
-          <li><strong>NMMC ERP System:</strong> Delivered 100+ citizen-facing services across modules. Led development
-            of dynamic form builder and workflow automation tools.</li>
-          <li>Built scalable REST APIs and responsive Angular frontends using RxJS, NgRx, and Tailwind CSS.</li>
+        <ul *ngIf="exp.showMore">
+          <li *ngFor="let point of exp.points">{{ point }}</li>
         </ul>
-      </div>
 
-      <div class="entry">
-        <h4>Junior Software Developer – Ainosoft Pvt Ltd</h4>
-        <p>Jan 2022 – Jan 2023</p>
-        <ul>
-          <li><strong>BechMarx:</strong> Built internal dashboard tools for static code analysis integration and
-            vulnerability tracking using Spring Boot and Thymeleaf.</li>
-          <li><strong>Readers (eBook Platform):</strong> Created Kindle-like web app using Angular and Spring Boot with
-            seamless reading experience.</li>
-          <li>Integrated Chart.js to design interactive performance analytics dashboards.</li>
-        </ul>
+        <a href="#" class="show-more" (click)="exp.showMore = !exp.showMore; $event.preventDefault()">
+          {{ exp.showMore ? 'Show Less' : 'Show More' }}
+        </a>
       </div>
     </div>
   </div>

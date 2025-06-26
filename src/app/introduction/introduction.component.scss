@@ -3,7 +3,7 @@
   align-items: center;
   background-color: #3f2e3e;
   color: white;
-  border-bottom: 1px solid #7a7a7a;
+  // border-bottom: 1px solid #7a7a7a;
   padding: 4% 5%;
   gap: 2vw;
   animation: fadeInIntro 1.2s ease-in-out;
@@ -90,6 +90,7 @@
       gap: 4vw;
 
       .box {
+        width: 20vw;
         padding: 1.5vw 2vw;
         background-color: #503c4c;
         border-radius: 1vw;
@@ -130,7 +131,7 @@
       transition: color 0.3s ease;
 
       &:after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         bottom: -3px;

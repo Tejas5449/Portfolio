@@ -9,7 +9,7 @@ export class ProjectsComponent {
   governmentProjects = [
     {
       name: 'NMMC ERP System',
-      logo: './assets/projects/nmmc.jpg',
+      logo: './assets/projects/nmmc.png',
       tagline: 'Municipal ERP with 100+ live services',
     },
     {
@@ -27,13 +27,18 @@ export class ProjectsComponent {
   professionalProjects = [
     {
       name: 'BenchMarks',
-      logo: './assets/projects/benchmarks.png',
+      logo: './assets/projects/bench_marx.png',
       tagline: 'KPI and performance tracking platform',
     },
     {
       name: 'Readers (eBook Platform)',
       logo: './assets/projects/readers.png',
       tagline: 'Kindle-like eBook experience',
+    },
+    {
+      name: 'AppOps',
+      logo: './assets/projects/appops.png',
+      tagline: 'The Ultimate Tool for Building Web Applications',
     },
   ];
 

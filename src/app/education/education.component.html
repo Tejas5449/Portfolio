@@ -1,16 +1,18 @@
-<div class="education-wrapper">
-  <div class="education">
-    <h6>EDUCATION</h6>
-    <div class="entry">
-      <h4>M.Sc. in Computer Science</h4>
-      <p>Abasaheb Garware College, Pune | CGPA: 9.30<br><span>June 2020 – April 2022</span></p>
-    </div>
-    <div class="entry">
-      <h4>B.Sc. in Computer Science</h4>
-      <p>Vidya Pratisthan, Baramati | 72.2%<br><span>August 2017 – April 2020</span></p>
-    </div>
+<div class="education-section">
+  <div class="education-header">
+    <h6>ACADEMICS</h6>
+    <h2>My <span class="text-theme">Education Journey</span></h2>
   </div>
-  <div class="education-image">
-    <img src="assets/Tejas_Eduction.png" alt="Graduation or Education Image" />
+
+  <div class="education-grid">
+    <div class="education-card" *ngFor="let edu of educationList">
+      <img [src]="edu.logo" [alt]="edu.institute" />
+      <div class="edu-content">
+        <h4>{{ edu.degree }}</h4>
+        <p class="institute">{{ edu.institute }}</p>
+        <p class="score">{{ edu.score }}</p>
+        <span class="duration">{{ edu.duration }}</span>
+      </div>
+    </div>
   </div>
 </div>

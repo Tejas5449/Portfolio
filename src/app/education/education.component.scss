@@ -1,143 +1,135 @@
-$bg-color: #3F2E3E;
-$text-color: white;
-$border-color: #7A7A7A;
+.education-section {
+  background-color: #3f2e3e;
+  color: white;
+  padding: 4% 6%;
+  animation: fadeInSection 1.2s ease-in;
 
-.education-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $bg-color;
-  color: $text-color;
-  padding: 4%;
-  border-bottom: 1px solid $border-color;
-  gap: 2rem;
+  @keyframes fadeInSection {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-  .education {
-    flex: 1 1 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    animation: slideInLeft 1s ease-in-out;
+  .education-header {
+    text-align: center;
+    margin-bottom: 3rem;
 
     h6 {
-      font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-      margin-bottom: 1.5rem;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      border-bottom: 2px solid #f64f59;
-      display: inline-block;
-      padding-bottom: 0.4rem;
+      font-size: 1.5vw;
+      opacity: 0.85;
+      margin-bottom: 0.5rem;
     }
 
-    .entry {
-      margin-bottom: 2rem;
+    h2 {
+      font-size: 2.8vw;
 
-      h4 {
-        font-size: clamp(1.1rem, 1.7vw, 1.6rem);
+      .text-theme {
         background: linear-gradient(to right, #12c2e9, #f64f59);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-weight: 600;
-        animation: fadeIn 1.2s ease forwards;
-      }
-
-      p {
-        font-size: clamp(1rem, 1.2vw, 1.2rem);
-        font-weight: 300;
-        line-height: 1.6;
-        margin-top: 0.5rem;
-
-        span {
-          display: block;
-          font-style: italic;
-          margin-top: 0.3rem;
-          opacity: 0.8;
-        }
       }
     }
   }
 
-  .education-image {
-    flex: 1 1 30%;
-    display: flex;
+  .education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
     justify-content: center;
-    align-items: center;
-    animation: slideInRight 1s ease-in-out;
+  }
+
+  .education-card {
+    background-color: #503c4c;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: slideInCard 1s ease both;
 
     img {
-      width: 100%;
-      max-width: 220px;
-      height: auto;
-      object-fit: contain;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-    }
-  }
-}
-
-// Animations
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-// Responsive
-@media (max-width: 768px) {
-  .education-wrapper {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    .education,
-    .education-image {
-      flex: 1 1 100%;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
     }
 
-    .education-image {
-      margin-top: 1.5rem;
+    .edu-content {
+      h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        background: linear-gradient(to right, #12c2e9, #f64f59);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .institute {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 0.5rem;
+      }
+
+      .score {
+        font-size: 0.95rem;
+        opacity: 0.8;
+        margin-top: 0.2rem;
+      }
+
+      .duration {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+        font-style: italic;
+        opacity: 0.7;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.08);
+      background-color: #61475a;
 
       img {
-        max-width: 180px;
+        transform: scale(1.1);
       }
     }
+  }
 
-    .education {
-      h6 {
-        margin-bottom: 1.2rem;
-      }
+  @keyframes slideInCard {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-      .entry {
-        margin-bottom: 1.5rem;
+  @media (max-width: 768px) {
+    .education-header h2 {
+      font-size: 6vw;
+    }
+
+    .education-card {
+      padding: 1rem;
+
+      .edu-content {
+        h4 {
+          font-size: 1.1rem;
+        }
+
+        .institute,
+        .score,
+        .duration {
+          font-size: 0.9rem;
+        }
       }
     }
   }

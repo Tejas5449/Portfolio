@@ -1,125 +1,144 @@
-.experience {
-  background-color: #3F2E3E;
+.experience-section {
+  background-color: #3f2e3e;
   color: white;
-  padding: 2%;
-  border-bottom: 1px solid #7A7A7A;
+  padding: 4% 6%;
+  animation: fadeInSection 1.2s ease-in;
 
-  .experience-wrapper {
-    display: flex;
-    align-items: flex-start;
-    gap: 2vw;
-    animation: fadeIn 1s ease-out;
+  @keyframes fadeInSection {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-    .experience-image {
-      flex: 0 0 10vw;
+  .experience-header {
+    text-align: center;
+    margin-bottom: 3rem;
 
-      img {
-        width: 100%;
-        border-radius: 50%;
-        border: 2px solid #7A7A7A;
-        transition: transform 0.3s ease;
-        &:hover {
-          transform: scale(1.05) rotate(-2deg);
-        }
-      }
+    h6 {
+      font-size: 1.5vw;
+      opacity: 0.85;
+      margin-bottom: 0.5rem;
     }
 
-    .experience-content {
-      flex: 1;
+    h2 {
+      font-size: 2.8vw;
 
-      h6 {
-        font-size: 1.8vw;
-        margin-bottom: 1.5vw;
-        font-weight: bold;
+      .text-theme {
+        background: linear-gradient(to right, #12c2e9, #f64f59);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
+  .experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2.5rem;
+    justify-content: center;
+  }
+
+  .experience-card {
+    background-color: #503c4c;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: slideInCard 1s ease both;
+
+    img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .exp-content {
+      h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        background: linear-gradient(to right, #12c2e9, #f64f59);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
-      .entry {
-        margin-bottom: 2vw;
-        opacity: 0;
-        transform: translateY(20px);
-        animation: slideInUp 0.8s ease-out forwards;
-        animation-delay: 0.2s;
+      .company {
+        font-size: 1rem;
+        font-weight: 400;
+        margin-top: 0.5rem;
+      }
 
-        &:nth-of-type(2) {
-          animation-delay: 0.4s;
-        }
+      .duration {
+        font-size: 0.9rem;
+        font-style: italic;
+        opacity: 0.75;
+        margin: 0.5rem 0;
+      }
 
-        h4 {
-          font-size: 1.5vw;
-          font-weight: 600;
-          margin-bottom: 0.5vw;
-          background: linear-gradient(to right, #12c2e9, #f64f59);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
+      ul {
+        text-align: left;
+        margin-top: 0.5rem;
+        padding-left: 1.2rem;
 
-        p {
-          font-size: 1.2vw;
-          margin: 0 0 0.5vw 0;
-          font-style: italic;
-          color: #ccc;
-        }
+        li {
+          font-size: 0.9rem;
+          margin-bottom: 0.4rem;
+          line-height: 1.4;
+          transition: color 0.3s;
 
-        ul {
-          margin: 0;
-          padding-left: 1.2vw;
-          list-style-type: disc;
-
-          li {
-            font-size: 1.1vw;
-            font-weight: 300;
-            margin-bottom: 0.5vw;
-            line-height: 1.4;
-            transition: color 0.3s;
-            &:hover {
-              color: #12c2e9;
-            }
+          &:hover {
+            color: #12c2e9;
           }
         }
       }
     }
+
+    &:hover {
+      transform: scale(1.08);
+      background-color: #61475a;
+
+      img {
+        transform: scale(1.1);
+      }
+    }
   }
 
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-
-  @keyframes slideInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+  @keyframes slideInCard {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   @media (max-width: 768px) {
-    padding: 4%;
+    .experience-header h2 {
+      font-size: 6vw;
+    }
 
-    .experience-wrapper {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    .experience-card {
+      padding: 1rem;
 
-      .experience-image {
-        width: 30vw;
-        margin-bottom: 2vw;
-      }
-
-      .experience-content {
-        h6 {
-          font-size: 3.5vw;
+      .exp-content {
+        h4 {
+          font-size: 1.1rem;
         }
 
-        .entry {
-          h4 {
-            font-size: 3vw;
-          }
-
-          p {
-            font-size: 2.5vw;
-          }
-
-          ul li {
-            font-size: 2.4vw;
-          }
+        .company,
+        .duration,
+        ul li {
+          font-size: 0.9rem;
         }
       }
     }
