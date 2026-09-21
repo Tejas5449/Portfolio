@@ -6,52 +6,96 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent {
+
+  // =========================
+  // CURRENT / HEALTHCARE PROJECTS
+  // =========================
+
   governmentProjects = [
+
+  {
+    name: 'BHAVYA HIMS – Bihar',
+    logo: './assets/projects/bhavya_hmis.jpg',
+    tagline: 'Login to BHAVYA HIMS facility for Bihar Government Hospitals',
+  },
+
+  {
+    name: 'HMIS Tripura',
+    logo: './assets/projects/tripura_ihmis.png',
+    tagline: 'Healthcare Management Information System for Tripura Government',
+  },
+
+  {
+    name: 'mASHA Dashboard – Bihar',
+    logo: './assets/projects/bhavya_asha.png',
+    tagline: 'ASHA Worker Management and Monitoring Platform for Bihar',
+  },
+
+  {
+    name: 'Tripura ASHA Dashboard',
+    logo: './assets/projects/tripura_logo.png',
+    tagline: 'ASHA Worker Management and Monitoring Platform for Tripura',
+  }
+];
+
+
+  // =========================
+  // PROFESSIONAL PROJECTS
+  // =========================
+
+  professionalProjects = [
+
     {
       name: 'NMMC ERP System',
       logo: './assets/projects/nmmc.png',
-      tagline: 'Municipal ERP with 100+ live services',
+      tagline: 'Municipal ERP for Navi Mumbai Government Services',
     },
+
     {
-      name: 'MHADA CFC System',
+      name: 'MHADA Citizen Facility Center',
       logo: './assets/projects/mhada.png',
-      tagline: 'Token-based citizen facility system',
+      tagline: 'Token-based citizen facility and service management',
+    },
+
+    // {
+    //   name: 'Readers',
+    //   logo: './assets/projects/readers.png',
+    //   tagline: 'Full-stack eBook reading platform',
+    // },
+
+    {
+      name: 'Performance Benchmarking',
+      logo: './assets/projects/bench_marx.png',
+      tagline: 'Real-time application performance analytics dashboard',
     },
     {
-      name: 'Aaple Sarkar Integrations',
-      logo: './assets/projects/aaple_sarkar.png',
-      tagline: 'State-level service integration',
+      name: 'NewsRise',
+      logo: './assets/projects/newsrise.png',
+      tagline: 'Desktop application built with Angular and Electron.js',
     },
+
+
   ];
 
-  professionalProjects = [
-    {
-      name: 'BenchMarks',
-      logo: './assets/projects/bench_marx.png',
-      tagline: 'KPI and performance tracking platform',
-    },
-    {
-      name: 'Readers (eBook Platform)',
-      logo: './assets/projects/readers.png',
-      tagline: 'Kindle-like eBook experience',
-    },
-    {
-      name: 'AppOps',
-      logo: './assets/projects/appops.png',
-      tagline: 'The Ultimate Tool for Building Web Applications',
-    },
-  ];
+
+  // =========================
+  // OTHER PROJECTS
+  // =========================
 
   personalProjects = [
+
     {
       name: 'Sharyat Management',
       logo: './assets/projects/sharyat.png',
       tagline: 'Bailgada Sharyat management system',
     },
+
     {
-      name: 'Doctor Appointment',
-      logo: './assets/projects/doctors.png',
-      tagline: 'Online doctor booking portal',
+      name: 'Pathology Lab Management System',
+      logo: './assets/projects/pathalogy.png',
+      tagline: 'Lab test, employee and expense management system',
     },
+
   ];
+
 }
