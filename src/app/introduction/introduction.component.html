@@ -1,38 +1,100 @@
 <div id="introduction" class="introduction">
-    <div class="image">
-        <img src="./assets/Tejas.png" alt="Tejas Rao">
+
+  <!-- LEFT: PROFILE IMAGE -->
+  <div class="image">
+    <img src="./assets/Tejas.png" alt="Tejas Rao" />
+  </div>
+
+
+  <!-- RIGHT: INTRODUCTION -->
+  <div class="text">
+
+    <h6>INTRODUCTION</h6>
+
+    <h2>
+      I'm Tejas Rao
+      <span class="text-theme">Full Stack Developer</span>
+    </h2>
+
+    <p class="intro-description">
+      4+ years of experience building scalable web applications
+      with a strong focus on
+      <strong>Angular</strong> and
+      <strong>Spring Boot</strong>,
+      specializing in
+      <strong>Healthcare</strong> and
+      <strong>Government ERP Systems</strong>.
+    </p>
+
+
+    <!-- MAIN TECHNOLOGIES -->
+
+    <div class="tech-stack">
+
+      <div class="tech-item">
+        <img src="./assets/skills/angular.svg" alt="Angular" />
+        <span>Angular</span>
+      </div>
+
+      <div class="tech-item">
+        <img src="./assets/skills/springboot.svg" alt="Spring Boot" />
+        <span>Spring Boot</span>
+      </div>
+
+      <div class="tech-item">
+        <img src="./assets/skills/healthcare.svg" alt="Healthcare" />
+        <span>Healthcare</span>
+      </div>
+
+      <div class="tech-item ">
+        <img src="./assets/skills/erp.svg" alt="Government ERP" />
+        <span>Government ERP</span>
+      </div>
+
     </div>
-    <div class="text">
-        <h6>INTRODUCTION</h6>
-        <br>
-        <h2>
-            I'm Tejas Rao
-            <span class="text-theme">Software Developer</span>
-        </h2>
 
-        <p>
-            I am a Software Developer with 4+ years of experience in designing,
-            developing, and maintaining scalable web applications. I specialize
-            in Angular and Java-based technologies, with hands-on experience in
-            Spring Boot, REST APIs, Angular Material, and modern web development.
-            I have worked on application migration, feature development, API
-            integration, UI improvements, and production support while following
-            Agile development practices.
-        </p>
 
-        <div class="container">
-            <div class="box experience-box">
-                <h3>4+</h3>
-                <p>Years of Experience</p>
-            </div>
+    <!-- DOMAIN -->
 
-        </div>
+    <!-- <div class="domain-list">
 
-        <a href="#"
-            class="link-effect link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-            (click)="onViewCV()">
-            Browse Resume
-        </a>
+      <span>
+        Healthcare Platforms
+      </span>
+
+      <span>
+        Government ERP Systems
+      </span>
+
+    </div> -->
+
+
+    <!-- EXPERIENCE -->
+
+    <div class="experience-highlight">
+
+      <div class="experience-number">
+        <h3>4+</h3>
+
+        <span>Years</span>
+      </div>
+
+      <div class="experience-label">
+        Professional Software
+        Development Experience
+      </div>
+
     </div>
+
+
+    <!-- RESUME -->
+
+    <a href="#" class="resume-button" (click)="onViewCV()">
+      <span>View Resume</span>
+
+      <!-- <span class="resume-arrow">→</span> -->
+    </a>
+
+  </div>
 
 </div>
