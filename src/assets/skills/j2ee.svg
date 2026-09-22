@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="J2EE">
+  <title>J2EE</title>
+  <rect width="512" height="512" rx="72" fill="#ffffff"/>
+  <circle cx="256" cy="230" r="170" fill="#5382a1"/>
+  <circle cx="256" cy="230" r="145" fill="#ffffff"/>
+  <path d="M175 180c42-42 120-47 164-8 24 21 35 49 35 80 0 68-52 119-118 119-53 0-98-33-114-79h48c13 20 37 33 66 33 42 0 72-31 72-73 0-40-30-71-72-71-25 0-47 11-61 30h-48c6-12 16-22 28-31z" fill="#5382a1"/>
+  <path d="M197 149c9 13 12 25 8 37-5 16-20 27-38 35 21 0 42-8 53-23 12-17 8-37-8-54z" fill="#e76f00"/>
+  <path d="M285 149c9 13 12 25 8 37-5 16-20 27-38 35 21 0 42-8 53-23 12-17 8-37-8-54z" fill="#e76f00"/>
+  <text x="256" y="447" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="58" font-weight="700" fill="#5382a1">J2EE</text>
+</svg>
