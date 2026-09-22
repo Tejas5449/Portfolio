@@ -1,1 +1,68 @@
-<p>contacts works!</p>
+<section id="contact" class="contact-section">
+
+    <div class="contact-header">
+
+        <h6>CONTACT</h6>
+
+        <h2>
+            Let's <span class="text-theme">Connect</span>
+        </h2>
+
+        <p>
+            Feel free to reach out to me for opportunities, collaborations,
+            projects, or just to connect.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+        <div class="contact-card" *ngFor="let contact of contactList">
+
+            <div class="contact-icon">
+                <img [src]="contact.icon" [alt]="contact.name" [class.white-icon]="
+    contact.name === 'Mobile' ||
+    contact.name === 'Twitter / X' ||
+    contact.name === 'Location'
+  " />
+            </div>
+
+            <div class="contact-info">
+
+                <h4>
+                    {{ contact.name }}
+                </h4>
+
+                <a *ngIf="contact.link !== '#'" [href]="contact.link" target="_blank" rel="noopener noreferrer">
+                    {{ contact.value }}
+                </a>
+
+                <p *ngIf="contact.link === '#'">
+                    {{ contact.value }}
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="contact-footer">
+
+        <p>
+            Have a project in mind?
+            <span>Let's build something great together.</span>
+        </p>
+
+        <a href="mailto:tejasrao.dev@gmail.com" class="contact-button">
+            <img src="assets/contact/email.svg" alt="Email" />
+
+            <span>Get In Touch</span>
+
+            <!-- <span class="button-arrow">→</span> -->
+        </a>
+
+    </div>
+
+</section>
