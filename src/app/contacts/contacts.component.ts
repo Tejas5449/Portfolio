@@ -24,32 +24,32 @@ export class ContactsComponent {
       name: 'LinkedIn',
       value: 'LinkedIn Profile',
       icon: 'assets/contact/linkedin.svg',
-      link: 'YOUR_LINKEDIN_URL'
+      link: 'www.linkedin.com/in/--tejas-rao'
     },
     {
       name: 'GitHub',
       value: 'GitHub Profile',
       icon: 'assets/contact/git.svg',
-      link: 'YOUR_GITHUB_URL'
+      link: 'https://github.com/Tejas5449'
     },
-    {
-      name: 'Instagram',
-      value: 'Instagram Profile',
-      icon: 'assets/contact/instagram.svg',
-      link: 'YOUR_INSTAGRAM_URL'
-    },
-    {
-      name: 'Facebook',
-      value: 'Facebook Profile',
-      icon: 'assets/contact/facebook.svg',
-      link: 'YOUR_FACEBOOK_URL'
-    },
-    {
-      name: 'Twitter / X',
-      value: 'Twitter Profile',
-      icon: 'assets/contact/twitter-x.svg',
-      link: 'YOUR_TWITTER_URL'
-    },
+    // {
+    //   name: 'Instagram',
+    //   value: 'Instagram Profile',
+    //   icon: 'assets/contact/instagram.svg',
+    //   link: 'YOUR_INSTAGRAM_URL'
+    // },
+    // {
+    //   name: 'Facebook',
+    //   value: 'Facebook Profile',
+    //   icon: 'assets/contact/facebook.svg',
+    //   link: 'YOUR_FACEBOOK_URL'
+    // },
+    // {
+    //   name: 'Twitter / X',
+    //   value: 'Twitter Profile',
+    //   icon: 'assets/contact/twitter-x.svg',
+    //   link: 'YOUR_TWITTER_URL'
+    // },
     {
       name: 'Location',
       value: 'Pune, Maharashtra',

@@ -1,5 +1,5 @@
 .contact-section {
-    background: #15121a;
+  background-color: #3f2e3e;
     color: #ffffff;
     padding: 80px 6%;
     position: relative;
@@ -135,7 +135,7 @@
 
     /* 4 cards per row */
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
 
     gap: 16px;
 
