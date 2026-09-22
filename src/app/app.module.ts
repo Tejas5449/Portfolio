@@ -14,6 +14,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { SkillsComponent } from './skills/skills.component';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { ContactsComponent } from './contacts/contacts.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
     EducationComponent,
     ExperienceComponent,
     ProjectsComponent,
-    SkillsComponent
+    SkillsComponent,
+    ContactsComponent
   ],
   imports: [
     BrowserModule,
