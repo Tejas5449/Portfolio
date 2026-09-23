@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Jakarta Persistence JPA">
+  <title>Jakarta Persistence (JPA)</title>
+  <rect width="512" height="512" rx="72" fill="#ffffff"/>
+  <g transform="translate(56 70)">
+    <path d="M200 0L400 72v160c0 105-84 170-200 210C84 402 0 337 0 232V72L200 0z" fill="#0f4c81"/>
+    <path d="M200 38l160 58v132c0 82-62 136-160 172-98-36-160-90-160-172V96L200 38z" fill="#ffffff"/>
+    <path d="M200 70l128 46v108c0 60-45 101-128 134-83-33-128-74-128-134V116L200 70z" fill="#0f4c81"/>
+    <path d="M128 130h144c16 0 28 12 28 28v38c0 16-12 28-28 28H128c-16 0-28-12-28-28v-38c0-16 12-28 28-28z" fill="#ffffff"/>
+    <path d="M150 151h100v14H150zM150 177h68v14h-68z" fill="#0f4c81"/>
+    <circle cx="282" cy="170" r="10" fill="#ffffff"/>
+  </g>
+  <text x="256" y="445" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="700" fill="#0f4c81">JPA</text>
+</svg>
