@@ -15,7 +15,7 @@ export class ProjectsComponent {
 
   {
     name: 'BHAVYA HIMS – Bihar',
-    logo: './assets/projects/bhavya_hmis.jpg',
+    logo: './assets/projects/bhavya_hmis.png',
     tagline: 'Login to BHAVYA HIMS facility for Bihar Government Hospitals',
   },
 
